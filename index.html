@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/web-icon.svg" />
+    <script
+      src="https://kit.fontawesome.com/feabdcc5b3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="logo">
+        <a href="#home"
+          ><img src="img/logo-removebg-preview.png" alt="FilmFiesta Logo"
+        /></a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-container">
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#latest">Movies</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="search-box">
+        <input
+          class="search-input"
+          type="search"
+          name=""
+          placeholder="Search Your Favorite Movie"
+          id="search"
+        />
+        <a href="#" class="search-btn" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="hero-section bg-image">
+        <div class="hero-content">
+          <div class="welcome-text">
+            <h4>Welcome to <span>FilmFiesta</span></h4>
+          </div>
+          <h3>Let's make your own cinema</h3>
+          <p>
+            Welcome to <span class="web-name">FilmFiesta</span>, where you
+            control your cinematic experience. Explore a curated world of movies
+            and TV shows tailored to your tastes. Dive into a diverse selection,
+            create your watchlist, and embark on a personalized entertainment
+            journey. Your cinema, your way.
+          </p>
+          <div class="explore-more">
+            <a href="#genre-movies" aria-label="Explore more"
+              ><i class="fa-solid fa-angle-down"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="latest">
+        <div class="latest-heading">
+          <h1>Check Out Our Most Popular Movies</h1>
+        </div>
+        <div class="post-container" id="post-container"></div>
+      </section>
+      <section id="genre-movies">
+        <div class="latest-heading">
+          <h1>Check Out Our Most Popular Movies By Genre</h1>
+        </div>
+        <div class="movie-genre" id="movies">
+          <ul id="movie-list">
+            <li class="active"><a href="#" data-category="all">All</a></li>
+            <li><a href="#" data-category="action">Action</a></li>
+            <li><a href="#" data-category="comedy">Comedy</a></li>
+            <li><a href="#" data-category="romance">Romance</a></li>
+            <li><a href="#" data-category="horror">Horror</a></li>
+          </ul>
+        </div>
+        <div class="post-container" id="choose-category"></div>
+      </section>
+      <section id="coming-soon">
+        <div class="container">
+          <div class="movie-list-container">
+            <h1 class="movie-list-title">Coming Soon</h1>
+            <div class="movie-list-wrapper">
+              <div class="movie-list" id="movie-lists"></div>
+              <i class="fa-solid fa-arrow-right arrow" aria-label="Next"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about-us" class="container">
+        <h2 class="about-us-title">About us</h2>
+        <div class="about-us-content">
+          <div class="left-content">
+            <img src="img/logo-removebg-preview.png" alt="FilmFiesta Logo" />
+          </div>
+          <div class="right-content">
+            <h4>
+              FilmFiesta - Your Premier Destination for Free Movie Streaming
+            </h4>
+            <p>
+              Welcome to FilmFiesta, a pioneering platform that redefines the
+              online movie-watching experience. As cinephiles ourselves, we
+              founded FilmFiesta with a mission to make cinematic brilliance
+              accessible to all, without any cost barriers. At FilmFiesta, we
+              believe in the power of storytelling and the magic that unfolds on
+              the silver screen. Our commitment is simple: providing an
+              extensive library of movies spanning genres, eras, and
+              cultures—all for free. We understand the joy of discovering a
+              hidden gem or rewatching a beloved classic, and FilmFiesta is
+              designed to be your cinematic haven. What sets FilmFiesta apart is
+              not just the vast collection of films but also our dedication to
+              quality streaming. Enjoy an immersive viewing experience with
+              high-definition content and a user-friendly interface that caters
+              to your movie preferences.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us" class="container">
+        <div class="titles">
+          <h4>Have any movies suggestion?</h4>
+          <h1>Feel Free To Contact Us</h1>
+        </div>
+        <div class="form-wrapper">
+          <div class="contact-us-left">
+            <form>
+              <label for="name">Your Name</label>
+              <input type="text" placeholder="Your Name" />
+              <label for="email">Your Email</label>
+              <input type="email" placeholder="Your Email" />
+              <label for="message">Your Message</label>
+              <textarea name="message"></textarea>
+              <button type="submit">Send Your Message</button>
+            </form>
+          </div>
+          <div class="contact-us-right">
+            <div class="contact-us-content">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="contact-us-right-text">
+                <h4>Address</h4>
+                <h6>342 Sloane St, London, W1D 3NE</h6>
+              </div>
+            </div>
+            <div class="contact-us-content">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="contact-us-right-text">
+                <h4>Email</h4>
+                <h6>Example@gmail.com</h6>
+              </div>
+            </div>
+            <div class="contact-us-content">
+              <i class="fa-solid fa-phone"></i>
+              <div class="contact-us-right-text">
+                <h4>Phone</h4>
+                <h6>+38344111555</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container row">
+          <div class="footer-col">
+            <h4>FilmFiesta</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">visit website</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="movie-overlay" class="overlay hidden">
+      <div class="overlay-content">
+        <span id="close-overlay">×</span>
+        <img id="overlay-img" src="" alt="Movie Poster" />
+        <h2 id="overlay-title"></h2>
+        <p id="overlay-description"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
